@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catch the Fruit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="homeScreen">
+        <div id="homeScreenContent">
+            <div class="floating-fruits">
+                <div class="fruit home-apple">🍎</div>
+                <div class="fruit home-banana">🍌</div>
+                <div class="fruit home-grape">🍇</div>
+                <div class="fruit home-special">🍍</div>
+            </div>
+            <h1 class="title">Catch the Fruit</h1>
+            <button class="start-button" onclick="startGame()">Mulai Bermain</button>
+        </div>
+    </div>
+    <div id="gameScreen">
+        <div class="cloud" style="top: 50px; animation-duration: 18s;"></div>
+        <div class="cloud" style="top: 150px; animation-duration: 22s;"></div>
+        <div class="cloud" style="top: 250px; animation-duration: 20s;"></div>
+        <div id="scoreBoard">
+            Skor: <span id="score">0</span> | Nyawa: <span id="lives">5</span>
+        </div>
+        <div id="basket"></div>
+        <div id="gameOverModal">
+            <h1>Game Over!</h1>
+            <p id="finalScoreDisplay">Skor Anda: 0</p>
+            <button id="restartButton">Mulai Ulang</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
